@@ -58,11 +58,8 @@ public class Main
 		matches = true;
 		for(int j = 0; j<listLength; j++)
 		{
-			if(!matches)
-			{
-				break;
-			}
-			for(i = 0; i<listLength; i++)
+			if(!matches){break;}
+			for(i = 0; i<listLength;)
 			{
 				debug(list[1][j] + " | " + list[0][i]);
 				if(list[1][j].toLowerCase().startsWith(list[0][i].toLowerCase()))
