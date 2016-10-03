@@ -55,8 +55,13 @@ public class Main
 			}
 		}
 		debug("" + list[1][listLength]);
+		matches = true;
 		for(int j = 0; j<listLength; j++)
 		{
+			if(!matches)
+			{
+				break;
+			}
 			for(i = 0; i<listLength; i++)
 			{
 				debug(list[1][j] + " | " + list[0][i]);
@@ -66,6 +71,7 @@ public class Main
 					break;
 				} else {
 					matches = false;
+					break;
 				}
 			}
 		}
